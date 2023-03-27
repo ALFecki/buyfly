@@ -14,7 +14,7 @@ This project is a fully working analogue of the air ticket sales system "Aviasal
 
 Here you can see use-case diagram of this project:
 
-![alt text](https://github.com/ALFecki/air-skyline/blob/main/src/main/resources/images/use-case.png?raw=true)
+![alt text](https://github.com/ALFecki/air-skyline/blob/skvortsov-dev/src/main/resources/images/use-case.png?raw=true)
 
 
 ## Tech
@@ -29,7 +29,7 @@ Dillinger uses a number of open source projects to work properly:
 
 There is a UML-class diagram of project, that shows exemplary project architecture:
 
-![alt text](https://github.com/ALFecki/air-skyline/blob/main/src/main/resources/images/uml.png?raw=true)
+![alt text](https://github.com/ALFecki/air-skyline/blob/skvortsov-dev/src/main/resources/images/uml.png?raw=true)
 
 
 ## Micronaut 3.8.7 Documentation
