@@ -1,6 +1,6 @@
 # Air-Skyline
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[//]: # ([![Build Status]&#40;https://travis-ci.org/joemccann/dillinger.svg?branch=master&#41;]&#40;https://travis-ci.org/joemccann/dillinger&#41;)
 
 Air-Skyline is a course project of Alexander Skvortsov, student of BSUIR, FCSaN, gr. 153503
 This project is a fully working analogue of the air ticket sales system "Aviasales".
