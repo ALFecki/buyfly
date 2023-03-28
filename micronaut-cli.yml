@@ -1,5 +1,5 @@
 applicationType: default
-defaultPackage: com.skyline
+defaultPackage: com.buy.fly
 testFramework: junit
 sourceLanguage: kotlin
 buildTool: gradle_kotlin

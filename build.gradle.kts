@@ -9,7 +9,7 @@ plugins {
 }
 
 version = "0.1"
-group = "com.skyline"
+group = "com.buy.fly"
 
 val kotlinVersion = project.properties.get("kotlinVersion")
 repositories {
@@ -37,7 +37,7 @@ dependencies {
 
 
 application {
-    mainClass.set("com.skyline.ApplicationKt")
+    mainClass.set("com.buy.fly.ApplicationKt")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("11")
@@ -61,7 +61,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("com.skyline.*")
+        annotations("com.buy.fly.*")
     }
 }
 

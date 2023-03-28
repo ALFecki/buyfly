@@ -1,8 +1,8 @@
-# Air-Skyline
+# BuyFly
 
 [//]: # ([![Build Status]&#40;https://travis-ci.org/joemccann/dillinger.svg?branch=master&#41;]&#40;https://travis-ci.org/joemccann/dillinger&#41;)
 
-Air-Skyline is a course project of Alexander Skvortsov, student of BSUIR, FCSaN, gr. 153503
+BuyFly is a course project of Alexander Skvortsov, student of BSUIR, FCSaN, gr. 153503
 This project is a fully working analogue of the air ticket sales system "Aviasales".
 
 ## Features
@@ -14,7 +14,7 @@ This project is a fully working analogue of the air ticket sales system "Aviasal
 
 Here you can see use-case diagram of this project:
 
-![alt text](https://github.com/ALFecki/air-skyline/blob/skvortsov-dev/src/main/resources/images/use-case.png?raw=true)
+![alt text](https://github.com/ALFecki/buyfly/blob/skvortsov-dev/src/main/resources/images/use-case.png?raw=true)
 
 
 ## Tech
@@ -29,7 +29,7 @@ Dillinger uses a number of open source projects to work properly:
 
 There is a UML-class diagram of project, that shows exemplary project architecture:
 
-![alt text](https://github.com/ALFecki/air-skyline/blob/skvortsov-dev/src/main/resources/images/uml.png?raw=true)
+![alt text](https://github.com/ALFecki/buyfly/blob/skvortsov-dev/src/main/resources/images/uml.png?raw=true)
 
 
 ## Micronaut 3.8.7 Documentation
@@ -68,7 +68,7 @@ GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
    [Micronaut]: <https://micronaut.io/>
    [Jetpack Compose]: <https://developer.android.com/jetpack/compose>
    
-   [git-repo-url]: <https://github.com/ALFecki/air-skyline.git>
+   [git-repo-url]: <https://github.com/ALFecki/buyfly.git>
 
 
 

@@ -1,2 +1,2 @@
-rootProject.name = "air-skyline"
+rootProject.name = "buyfly"
 

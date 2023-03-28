@@ -1,21 +1,15 @@
-package com.skyline.data.entities
+package com.buy.fly.data.entities
 
-import com.skyline.data.IEntity
-import java.util.Date
+import com.buy.fly.data.IEntity
 import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 import javax.persistence.Id
 
-data class Flight(
+data class Airport(
     override var alias: String,
     override var name: String,
-
-    val number: Long,
-    val departure: Airport,
-    val arrival: Airport,
-    val date: Date,
-    val aircraft: Aircraft
-
+    var country: String,
+    var city: String
 ) : IEntity() {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
