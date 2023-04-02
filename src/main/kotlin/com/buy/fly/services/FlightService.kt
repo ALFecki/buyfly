@@ -29,19 +29,19 @@ class FlightService(
         TODO("Not yet implemented")
     }
 
+    override fun insertAllItems(items: List<FlightDto>): List<Flight> {
+        TODO("Not yet implemented")
+    }
+
+    override fun insertItem(item: FlightDto): Flight {
+        TODO("Not yet implemented")
+    }
+
     override fun deleteAll(items: List<Flight>): List<Flight> {
         TODO("Not yet implemented")
     }
 
     override fun delete(item: Flight): Flight {
-        TODO("Not yet implemented")
-    }
-
-    override fun insertAllItems(items: List<Flight>): List<Flight> {
-        TODO("Not yet implemented")
-    }
-
-    override fun insertItem(item: Flight): Flight {
         TODO("Not yet implemented")
     }
 

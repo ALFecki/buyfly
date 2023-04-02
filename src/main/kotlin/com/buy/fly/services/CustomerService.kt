@@ -17,6 +17,14 @@ class CustomerService: IService<JsonObject, Customer> {
         TODO("Not yet implemented")
     }
 
+    override fun insertAllItems(items: List<JsonObject>): List<Customer> {
+        TODO("Not yet implemented")
+    }
+
+    override fun insertItem(item: JsonObject): Customer {
+        TODO("Not yet implemented")
+    }
+
     override fun deleteAll(items: List<Customer>): List<Customer> {
         TODO("Not yet implemented")
     }
@@ -25,12 +33,5 @@ class CustomerService: IService<JsonObject, Customer> {
         TODO("Not yet implemented")
     }
 
-    override fun insertAllItems(items: List<Customer>): List<Customer> {
-        TODO("Not yet implemented")
-    }
-
-    override fun insertItem(item: Customer): Customer {
-        TODO("Not yet implemented")
-    }
 
 }

@@ -19,19 +19,19 @@ class AircraftService : IService<MongoAircraft, Aircraft> {
         TODO("Not yet implemented")
     }
 
+    override fun insertAllItems(items: List<MongoAircraft>): List<Aircraft> {
+        TODO("Not yet implemented")
+    }
+
+    override fun insertItem(item: MongoAircraft): Aircraft {
+        TODO("Not yet implemented")
+    }
+
     override fun deleteAll(items: List<Aircraft>): List<Aircraft> {
         TODO("Not yet implemented")
     }
 
     override fun delete(item: Aircraft): Aircraft {
-        TODO("Not yet implemented")
-    }
-
-    override fun insertAllItems(items: List<Aircraft>): List<Aircraft> {
-        TODO("Not yet implemented")
-    }
-
-    override fun insertItem(item: Aircraft): Aircraft {
         TODO("Not yet implemented")
     }
 }

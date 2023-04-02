@@ -16,6 +16,14 @@ class AirportService: IService<MongoAirport, Airport> {
         TODO("Not yet implemented")
     }
 
+    override fun insertAllItems(items: List<MongoAirport>): List<Airport> {
+        TODO("Not yet implemented")
+    }
+
+    override fun insertItem(item: MongoAirport): Airport {
+        TODO("Not yet implemented")
+    }
+
     override fun deleteAll(items: List<Airport>): List<Airport> {
         TODO("Not yet implemented")
     }
@@ -24,12 +32,5 @@ class AirportService: IService<MongoAirport, Airport> {
         TODO("Not yet implemented")
     }
 
-    override fun insertAllItems(items: List<Airport>): List<Airport> {
-        TODO("Not yet implemented")
-    }
-
-    override fun insertItem(item: Airport): Airport {
-        TODO("Not yet implemented")
-    }
 
 }
