@@ -24,7 +24,7 @@ dependencies {
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-jackson-databind")
     implementation("io.micronaut.kotlin:micronaut-kotlin-runtime")
-    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
+    
     implementation("jakarta.annotation:jakarta.annotation-api")
     implementation("io.micronaut.mongodb:micronaut-mongo-reactive")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")

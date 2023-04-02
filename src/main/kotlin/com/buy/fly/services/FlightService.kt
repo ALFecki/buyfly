@@ -2,6 +2,7 @@ package com.buy.fly.services
 
 import com.buy.fly.data.entities.Flight
 import com.buy.fly.data.repositories.FlightRepository
+import com.buy.fly.forms.FlightDto
 import jakarta.inject.Singleton
 
 
@@ -9,9 +10,15 @@ import jakarta.inject.Singleton
 @Singleton
 class FlightService(
     private val flightRepository: FlightRepository
-) : IService<Flight> {
-    override fun createItem(item: Flight): Flight {
-        TODO("Not yet implemented")
+) : IService<FlightDto, Flight> {
+    override fun createItem(item: FlightDto): Flight {
+        return Flight(
+            number = item.number,
+            departure = item.departure,
+            arrival = item.arrival,
+            date = item.date,
+            aircraft = item.aircraft
+        )
     }
 
     override fun find(alias: String): Flight? {

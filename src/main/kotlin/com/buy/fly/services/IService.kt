@@ -1,7 +1,7 @@
 package com.buy.fly.services
 
-interface IService<T> {
-    fun createItem(item: T) : T
+interface IService<DtoObject, T> {
+    fun createItem(item: DtoObject) : T
     fun find(alias: String) : T?
     fun findAll() : List<T>?
     fun insertItem(item: T) : T

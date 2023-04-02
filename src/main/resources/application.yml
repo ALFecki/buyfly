@@ -1,11 +1,11 @@
 micronaut:
   application:
-    name: airSkyline
-datasources:
-  default:
-    driver-class-name: org.postgresql.Driver
-    db-type: postgres
-    dialect: POSTGRES
+    name: buyfly
+#datasources:
+#  default:
+#    driver-class-name: org.postgresql.Driver
+#    db-type: postgres
+#    dialect: POSTGRES
 jpa:
   default:
     properties:
