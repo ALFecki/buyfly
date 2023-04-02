@@ -19,19 +19,25 @@ repositories {
 dependencies {
     kapt("io.micronaut.data:micronaut-data-processor")
     kapt("io.micronaut:micronaut-http-validation")
+
+    implementation("io.micronaut.data:micronaut-data-mongodb")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-jackson-databind")
     implementation("io.micronaut.data:micronaut-data-hibernate-jpa")
     implementation("io.micronaut.kotlin:micronaut-kotlin-runtime")
     implementation("io.micronaut.sql:micronaut-jdbc-hikari")
     implementation("jakarta.annotation:jakarta.annotation-api")
+    implementation("io.micronaut.mongodb:micronaut-mongo-reactive")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("org.postgresql:postgresql")
     implementation("io.micronaut:micronaut-validation")
 
+    annotationProcessor("io.micronaut.data:micronaut-data-document-processor")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
+    runtimeOnly("org.mongodb:mongodb-driver-sync")
+
 
 }
 
