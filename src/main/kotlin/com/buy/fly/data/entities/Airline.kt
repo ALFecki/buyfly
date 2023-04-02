@@ -1,13 +1,12 @@
 package com.buy.fly.data.entities
 
 import com.buy.fly.data.IEntity
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import io.micronaut.data.annotation.GeneratedValue
+import io.micronaut.data.annotation.Id
+import io.micronaut.data.annotation.MappedEntity
 
 
-@Entity
+@MappedEntity
 data class Airline (
 
     override var name: String,
@@ -16,6 +15,6 @@ data class Airline (
     ) : IEntity() {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     override var id: Long = 0
 }

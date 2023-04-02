@@ -1,11 +1,12 @@
 package com.buy.fly.data.entities
 
 import com.buy.fly.data.IEntity
+import io.micronaut.data.annotation.GeneratedValue
+import io.micronaut.data.annotation.Id
+import io.micronaut.data.annotation.MappedEntity
 import java.util.Date
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
 
+@MappedEntity
 data class Flight(
     override var alias: String,
     override var name: String,
@@ -14,10 +15,11 @@ data class Flight(
     val departure: Airport,
     val arrival: Airport,
     val date: Date,
+//    val time: Time,
     val aircraft: Aircraft
 
 ) : IEntity() {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     override var id: Long = 0
 }
