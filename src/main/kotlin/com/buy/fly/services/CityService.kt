@@ -13,47 +13,49 @@ class CityService(
 //    private val cityRepository: CityRepository
 ) : IService<CityDto, City> {
     override fun createItem(item: CityDto): City {
-        TODO("Not yet implemented")
+        val country = DbFakeConstants.COUNTRIES.find { it.code == item.country_code }
+        return City(
+            code = item.code,
+            name = item.name,
+            country = country,
+            translation = item.name_translations["en"]
+        )
     }
 
     override fun find(alias: String): City? {
-        TODO("Not yet implemented")
+        return DbFakeConstants.CITIES.find { it.name == alias }
     }
 
     override fun findAll(): List<City>? {
-        TODO("Not yet implemented")
+        return DbFakeConstants.CITIES
     }
 
     override fun deleteAll(items: List<City>): List<City> {
-        TODO("Not yet implemented")
+        DbFakeConstants.CITIES.removeAll(items)
+        return items
     }
 
     override fun delete(item: City): City {
-        TODO("Not yet implemented")
+        DbFakeConstants.CITIES.remove(item)
+        return item
     }
 
     override fun insertAllItems(items: List<CityDto>): List<City> {
         val cityList = mutableListOf<City>()
 //        println(items)
         for (city in items) {
-            val country = DbFakeConstants.COUNTRIES.find { it.code == city.country_code }
-//            if (country != null) {
-//                println(country)
-//            }
             cityList.add(
-                City(
-                    code = city.code,
-                    name = city.name,
-                    country = country,
-                    translation = city.name_translations["en"]
-                )
+                createItem(city)
             )
         }
+        DbFakeConstants.CITIES = cityList
         return cityList
     }
 
     override fun insertItem(item: CityDto): City {
-        TODO("Not yet implemented")
+        val city =  createItem(item)
+        DbFakeConstants.CITIES.add(city)
+        return city
     }
 
 }

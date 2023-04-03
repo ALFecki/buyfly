@@ -17,8 +17,8 @@ import java.net.http.HttpResponse
 
 
 object DbFakeConstants {
-    var COUNTRIES : List<Country> = listOf()
-    var CITIES : List<City> = listOf()
+    var COUNTRIES : MutableList<Country> = mutableListOf()
+    var CITIES : MutableList<City> = mutableListOf()
 }
 
 @Controller("/")
@@ -38,7 +38,7 @@ class AppController(
             httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString()).body(),
             typeToken
         )
-        DbFakeConstants.COUNTRIES = countryService.insertAllItems(response)
+        countryService.insertAllItems(response)
         val citiesRequest =
             HttpRequest.newBuilder().uri(URI.create("http://api.travelpayouts.com/data/ru/cities.json")).build()
         val typeTok = object : TypeToken<List<CityDto>>() {}.type
@@ -46,7 +46,7 @@ class AppController(
             httpClient.send(citiesRequest, HttpResponse.BodyHandlers.ofString()).body(),
             typeTok
         )
-        DbFakeConstants.CITIES = cityService.insertAllItems(resp)
+        cityService.insertAllItems(resp)
         return DbFakeConstants.CITIES
     }
 
